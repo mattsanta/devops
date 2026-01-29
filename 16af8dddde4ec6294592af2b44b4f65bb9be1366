@@ -1,0 +1,23 @@
+devops-mcp-server/README.md
+  966a827bcbdebc91 5-18,29,31,33,36,47-48,54,56,58,60,63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.40",
+  "base_commit_sha": "16af8dddde4ec6294592af2b44b4f65bb9be1366",
+  "prompts": {
+    "966a827bcbdebc91": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "6d1bab22-bf83-4070-9812-9e5ed3978265",
+        "model": "gemini-3-flash-preview"
+      },
+      "human_author": "unknown",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 25,
+      "overriden_lines": 0
+    }
+  }
+}
