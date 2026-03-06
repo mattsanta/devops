@@ -1,0 +1,21 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.8",
+  "base_commit_sha": "327ebe4df97c563ad0a4b95f2b4c56f0e4d1089b",
+  "prompts": {
+    "93a184e449e38c90": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "0b387577-36c6-46fd-929a-16edf5626b84",
+        "model": "gemini-3-flash-preview"
+      },
+      "human_author": "mattsanta <mattsanta@google.com>",
+      "messages": [],
+      "total_additions": 155,
+      "total_deletions": 1,
+      "accepted_lines": 154,
+      "overriden_lines": 0
+    }
+  }
+}
