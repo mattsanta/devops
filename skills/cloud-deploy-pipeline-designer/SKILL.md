@@ -73,6 +73,6 @@ gcloud deploy apply --file=clouddeploy.yaml --region=<REGION> --project=<PROJECT
 
 1. **If the user does not have runtime manifests**: Generate some basic ones based on the runtime.
     - **If Cloud Run**: Generate a Cloud Run manifest. Use `references/basic-cloudrun-manifests.md` as a reference.
-    - **If GKE**: Generate a Kubernetes `Deployment` and `Service `manifest. Use `references/basic-k8s-manifests.md` as a reference.
+    - **If GKE**: Generate a Kubernetes `Deployment` and `Service`manifest. Use `references/basic-k8s-manifests.md` as a reference.
 2. Create a `skaffold.yaml` file required to create a Cloud Deploy `Release` for the `DeliveryPipeline`.
     - Use `references/configure-skaffold.md` as a reference when generating the `skaffold.yaml` file.

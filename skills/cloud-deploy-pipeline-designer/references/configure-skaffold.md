@@ -109,6 +109,6 @@ profiles:
 - name: <TARGET_ID>
   manifests:
     kustomize:
-      path: 
+      paths: 
       - <PATH_TO_KUSTOMIZE_DIR>
 ```
