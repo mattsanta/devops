@@ -1,0 +1,27 @@
+devops-mcp-server/cloudstorage/cloudstorage_test.go
+  f293a6503aa29307 184,211,255
+devops-mcp-server/integration_tests/main.go
+  f293a6503aa29307 203,268
+devops-mcp-server/cloudstorage/client/mocks/mock_cloudstorageclient.go
+  f293a6503aa29307 29,72-73
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.40",
+  "base_commit_sha": "99f0d34ab06b754e0b908776f4f772d1bd7e68f5",
+  "prompts": {
+    "f293a6503aa29307": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "7b1086bc-cff7-497e-ab64-286922f44e82",
+        "model": "gemini-3-flash-preview"
+      },
+      "human_author": "unknown",
+      "messages": [],
+      "total_additions": 8,
+      "total_deletions": 8,
+      "accepted_lines": 8,
+      "overriden_lines": 0
+    }
+  }
+}

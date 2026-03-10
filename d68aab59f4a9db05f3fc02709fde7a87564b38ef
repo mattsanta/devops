@@ -1,0 +1,44 @@
+devops-mcp-server/bm25/client/client.go
+  c55c00cecbe0105c 19,23,26-27,29-30,44-48,50-54,56,61-62,69,80
+lib/bm25/bm25.go
+  c55c00cecbe0105c 1-103,150-209
+local-kb-index-builder/fetch_docs.go
+  0f7c957017732b63 83-85,221-223
+local-kb-index-builder/bm25.go
+  c55c00cecbe0105c 23,27,43,57-65,67-69,71,73-75,77,80,82,86,93
+local-kb-index-builder/fetch_docs_test.go
+  0f7c957017732b63 29,100,102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.37",
+  "base_commit_sha": "d68aab59f4a9db05f3fc02709fde7a87564b38ef",
+  "prompts": {
+    "0f7c957017732b63": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "66203403-db82-4b02-9d7d-c5e36aaf54f8",
+        "model": "gemini-3-flash-preview"
+      },
+      "human_author": "unknown",
+      "messages": [],
+      "total_additions": 9,
+      "total_deletions": 5,
+      "accepted_lines": 9,
+      "overriden_lines": 0
+    },
+    "c55c00cecbe0105c": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "e3d4f96f-d369-4e12-9ff6-8b4090cf21a9",
+        "model": "gemini-3-flash-preview"
+      },
+      "human_author": "unknown",
+      "messages": [],
+      "total_additions": 282,
+      "total_deletions": 478,
+      "accepted_lines": 208,
+      "overriden_lines": 1
+    }
+  }
+}
