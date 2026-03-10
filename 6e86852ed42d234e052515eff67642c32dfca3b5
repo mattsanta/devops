@@ -1,0 +1,35 @@
+skills/gcp-terraform/SKILL.md
+  d7cc3626f6648548 3,70-71,74,90,94-103
+skills/gcp-terraform/references/troubleshooting-gcp.md
+  d7cc3626f6648548 1-40
+skills/gcp-terraform/references/testing-and-mocking.md
+  d7cc3626f6648548 1-64
+skills/gcp-terraform/references/iam-and-security.md
+  d7cc3626f6648548 1-57
+skills/gcp-terraform/references/naming-conventions.md
+  d7cc3626f6648548 1-63
+skills/gcp-terraform/references/style-and-structure.md
+  d7cc3626f6648548 1-64
+skills/gcp-terraform/references/gcp-networking-patterns.md
+  d7cc3626f6648548 1-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.10",
+  "base_commit_sha": "6e86852ed42d234e052515eff67642c32dfca3b5",
+  "prompts": {
+    "d7cc3626f6648548": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "0e6baae5-73f2-4dd8-bb61-fa75870205d7",
+        "model": "gemini-3-flash-preview"
+      },
+      "human_author": "Yeshwanth Gunasekaran <yesh@google.com>",
+      "messages": [],
+      "total_additions": 378,
+      "total_deletions": 34,
+      "accepted_lines": 363,
+      "overriden_lines": 0
+    }
+  }
+}
