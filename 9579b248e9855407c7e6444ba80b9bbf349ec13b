@@ -1,0 +1,53 @@
+skills/cloud-deploy-pipelines/references/configure-pipelines.md
+  2be1fbd86bd3bfd2 88,90,94,96-104,106-108,110-111,113-114,118-119,121,123-130,133-140,142-143,145
+skills/cloud-deploy-pipelines/references/basic-cloudrun-alerts.md
+  c64b1f170d7402bd 4-6,10,12-22,24-55,57-65,67-73,76-78,80-90
+skills/cloud-deploy-pipelines/SKILL.md
+  2be1fbd86bd3bfd2 81,83,86-87,89-90,97,99,104,106,108,110,112-116
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.9",
+  "base_commit_sha": "9579b248e9855407c7e6444ba80b9bbf349ec13b",
+  "prompts": {
+    "2be1fbd86bd3bfd2": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "f1578a7e-1849-4f9f-8b01-1f042742139e",
+        "model": "gemini-3-flash-preview"
+      },
+      "human_author": "mattsanta <mattsanta@google.com>",
+      "messages": [],
+      "total_additions": 402,
+      "total_deletions": 30,
+      "accepted_lines": 292,
+      "overriden_lines": 21
+    },
+    "49ea8f2f53d30c5f": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "b018d071-c078-414c-afe9-95fb1de966fe",
+        "model": "gemini-3-flash-preview"
+      },
+      "human_author": "mattsanta <mattsanta@google.com>",
+      "messages": [],
+      "total_additions": 148,
+      "total_deletions": 50,
+      "accepted_lines": 126,
+      "overriden_lines": 0
+    },
+    "c64b1f170d7402bd": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "d08c2c20-0823-462c-8166-772dfabb3777",
+        "model": "gemini-3-flash-preview"
+      },
+      "human_author": "mattsanta <mattsanta@google.com>",
+      "messages": [],
+      "total_additions": 236,
+      "total_deletions": 11,
+      "accepted_lines": 77,
+      "overriden_lines": 6
+    }
+  }
+}
