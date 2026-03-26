@@ -174,6 +174,8 @@ Run the following command to promote a `Release` to the next target in the `Deli
 gcloud deploy promote --release=<RELEASE_ID> --delivery-pipeline=<DELIVERY_PIPELINE_ID> --region=<REGION> --project=<PROJECT_ID>
 ```
 
+**TIP**: Use a short <RELEASE_ID> since the command will auto-generate a `Rollout` ID (with a 63 character limit) in the format: `<RELEASE_ID>-to-<TARGET_ID>`.
+
 Reference documentation for `gcloud deploy releases promote`: https://docs.cloud.google.com/sdk/gcloud/reference/deploy/releases/promote.
 
 ### Monitor a release

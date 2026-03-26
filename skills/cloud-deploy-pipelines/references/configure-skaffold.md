@@ -1,6 +1,8 @@
 # Configure Skaffold YAML
 
-This document provides examples for configuring a `skaffold.yaml` file used when creating a Cloud Deploy `Release` for a `DeliveryPipeline`. Use these examples if it fits the users requirements.
+This document provides examples for configuring a `skaffold.yaml` file used when creating a Cloud Deploy `Release` for a `DeliveryPipeline`.
+
+**TIP**: Try not to deviate from these examples since most Skaffold configuration is **not applicable** to Cloud Deploy. For example, the top-level `build` stanza in a `skaffold.yaml` does nothing with Cloud Deploy.
 
 ## Deploy to Cloud Run
 

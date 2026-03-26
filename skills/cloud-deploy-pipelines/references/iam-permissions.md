@@ -33,3 +33,6 @@ The `Automation` service account **requires** the `roles/clouddeploy.operator` r
 The user or service account that creates a `Release` and `Rollout` **must** have:
 * `roles/clouddeploy.releaser`
 * `roles/iam.serviceAccountUser`
+* `roles/storage.admin`
+
+**TIP**: If the `Release` and `Rollout` is created by a Cloud Build then these roles need to be assigned to the Cloud Build service account. See https://docs.cloud.google.com/build/docs/cloud-build-service-account for more information about the Cloud Build service account.

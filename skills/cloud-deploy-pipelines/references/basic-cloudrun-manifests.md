@@ -1,6 +1,6 @@
 # Basic Cloud Run manifests
 
-This document provides examples for generating Cloud Run resource manifests that are used with Cloud Deploy to deploy to Cloud Run.
+This document provides examples for generating Cloud Run resource manifests that are used with Cloud Deploy to deploy to Cloud Run. The Cloud Run YAML reference is available at: https://docs.cloud.google.com/run/docs/reference/yaml/v1.
 
 The examples in this file use placeholders between `<` and `>`, e.g. `<SERVICE_NAME>`. Replace these placeholders with the actual values when generating the YAML.
 
