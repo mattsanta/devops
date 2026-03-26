@@ -30,6 +30,27 @@ terraform {
 
 Note: The GCS bucket must have Object Versioning enabled to allow recovery from accidental state corruption or overlapping writes.
 
+### Required Provider Version
+Use the Google Cloud Terraform provider version 7.20.0 or higher. This skill utilizes features (e.g., Developer Connect) introduced in Google Provider v7.20.0.
+
+```hcl
+terraform {
+  required_version = ">= 1.6.0"
+
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = ">= 7.20.0" 
+    }
+  }
+}
+```
+
+To retrieve the latest version of the Google provider, use the following command:
+```bash
+curl -s https://registry.terraform.io/v1/providers/hashicorp/google | jq -r .version
+```
+
 ## 🛠️ Execution Protocol (Safety First)
 The Agent must follow this lifecycle for every infrastructure change to ensure idempotency and prevent production outages:
 
@@ -87,6 +108,44 @@ To maintain a clean module interface, use the main identifier for singleton reso
    - Shared VPC: Always distinguish between Host projects (where the network lives) and Service projects (where resources consume the network).
    - Private Google Access: Subnets should always have private_ip_google_access = true.
    - Workload Identity: Prefer GKE Workload Identity over static Service Account JSON keys.
+
+3. Cloud Build Triggers with Developer Connect
+   When using Developer Connect git repository links, use `developer_connect_event_config` — NOT `repository_event_config`. The `repository_event_config` block is for Cloud Build v2 repository connections and will not work with Developer Connect resources. An example block to create a Cloud Build trigger with Developer Connect git repository link is as follows:
+
+    ```hcl
+    resource "google_cloudbuild_trigger" "main" {
+      developer_connect_event_config {
+        git_repository_link = google_developer_connect_git_repository_link.main.id
+        push {
+          branch = var.trigger_branch
+        }
+      }
+    }
+    ```
+
+4. Developer Connect Connection
+   When configuring `google_developer_connect_connection`, always set `github_app` to `"DEVELOPER_CONNECT"`. Using `"FIREBASE"` is incorrect and will cause triggers to fail.
+
+    ```hcl
+    resource "google_developer_connect_connection" "main" {
+      location      = var.region
+      connection_id = var.connection_id
+      project       = var.project_id
+
+      github_config {
+        github_app = "DEVELOPER_CONNECT" # CORRECT
+        authorizer_credential {
+          oauth_token_secret_version = "" # Populated after manual authorization
+        }
+      }
+
+      depends_on = [google_project_service.main["developerconnect.googleapis.com"]]
+
+      lifecycle {
+        ignore_changes = [github_config[0].authorizer_credential]
+      }
+    }
+    ```
 
 ## 📂 Directory Structure
 Follow this standard to ensure compatibility with Antigravity (AGY) discovery and Google best practices:
